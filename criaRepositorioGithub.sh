@@ -27,7 +27,7 @@ for REPO_NAME in "${REPOS[@]}"; do
     git remote add origin https://github.com/$GITHUB_USER/$REPO_NAME.git
 
     # Push the code to GitHub
-    git push -u origin main
+    git push -u origin master
 
     # Go back to the parent directory
     cd ..
