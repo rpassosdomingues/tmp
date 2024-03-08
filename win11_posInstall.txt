@@ -1,0 +1,22 @@
+# Instalar o winget se ainda não estiver instalado
+if (-not (Get-Command winget -ErrorAction SilentlyContinue)) {
+  wsl --install
+  Restart-Computer
+}
+
+# Atualizar todos os aplicativos instalados pelo winget
+winget upgrade --all --include-unknown
+
+# Instalar o WSL se ainda não estiver instalado
+if (-not (Get-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux)) {
+  wsl --install
+  Restart-Computer
+}
+
+# Remover o Ubuntu se estiver instalado
+if (wsl -l | Select-String -Pattern "Ubuntu") {
+  wsl --unregister Ubuntu
+}
+
+# Instalar o Ubuntu 22.04 LTS
+winget install Canonical.Ubuntu.22.04-LTS
