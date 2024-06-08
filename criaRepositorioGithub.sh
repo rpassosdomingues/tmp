@@ -1,10 +1,11 @@
 #!/bin/bash
+#Last Update: Jun 8 Sat
 
 # Repository information
 GITHUB_USER="rpassosdomingues"
 REPOS=("cache" "tmp" "main" "insights")
 FILE_NAME="README.md"
-COMMIT_MESSAGE="first commit"
+COMMIT_MESSAGE="Commit Message"
 
 for REPO_NAME in "${REPOS[@]}"; do
     # Create a new directory
