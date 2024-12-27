@@ -1,0 +1,1 @@
+sudo apt install libgtk-3-0 libglib2.0-0 libgdk-pixbuf2.0-0 libpango-1.0-0 libgl1-mesa-glx
