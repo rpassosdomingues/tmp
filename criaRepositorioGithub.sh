@@ -1,11 +1,11 @@
 #!/bin/bash
-# Last Update: 2024 Nov 11 (Wed)
+# Last Update: 2024 Dec 27 (Fri)
 
 # Informações do repositório
 GITHUB_USER="rpassosdomingues"
 GITHUB_EMAIL="rafael.domingues@sou.unifal-mg.edu.br"
 REPOS=("cache" "main" "tmp" "insights")
-COMMIT_MESSAGE="2024 Nov 11 (Wed)"
+COMMIT_MESSAGE="$(date +'%b %d %a')"
 FILE_NAME="README.md"
 
 # Configura o Git com nome de usuário e e-mail
